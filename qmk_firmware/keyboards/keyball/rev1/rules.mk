@@ -5,9 +5,9 @@ MCU = atmega32u4
 BOOTLOADER = caterina
 
 # Build Options
-BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = lite       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = no        # Mouse keys
-EXTRAKEY_ENABLE = no        # Audio control and System control
+EXTRAKEY_ENABLE = yes        # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
@@ -36,3 +36,5 @@ SRC += oledkit.c
 
 # Link Time Optimization required for size.
 LTO_ENABLE = yes
+
+ENCODER_ENABLE = yes
